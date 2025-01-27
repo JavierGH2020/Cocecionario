@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="Contactanos.css">
+    <script defer src="Contactanos.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <h1>Formulario de Contacto</h1>
+        </div>
+
+        <form action="" method="post" id="form-user">
+            <div class="form-body row">
+                <div class="left-column col-md-6">
+                    <fieldset>
+                        <legend>Datos del Usuario:</legend>
+                        <label for="input-first">Usuario:</label>
+                        <input type="text" id="input-first" name="usuario" placeholder="Escribe tu usuario">
+
+                        <label for="input-password">Contraseña:</label>
+                        <input type="password" id="input-password" name="contraseña" placeholder="Escribe tu contraseña">
+
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu teléfono" maxlength="10">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Datos del Coche:</legend>
+                        <label>Valor del Coche:</label>
+                        <div class="radio-group">
+                            <input type="radio" name="precio" value="superior" id="superior">
+                            <label for="superior">Precio superior a los 200,000€</label><br>
+
+                            <input type="radio" name="precio" value="inferior" id="inferior">
+                            <label for="inferior">Precio inferior a los 200,000€</label>
+                        </div>
+
+                        <label>Otros Datos:</label>
+                        <div class="radio-group">
+                            <input type="radio" name="servicio" value="alquiler" id="alquiler">
+                            <label for="alquiler">Alquiler</label><br>
+                            <div class="alquiler-dates">
+                                <label for="fecha_inicio">Fecha de Inicio:</label>
+                                <input type="date" name="fecha_inicio" id="fecha_inicio"><br>
+                                <label for="fecha_fin">Fecha de Fin:</label>
+                                <input type="date" name="fecha_fin" id="fecha_fin">
+                            </div>
+
+                            <input type="radio" name="servicio" value="compra" id="compra">
+                            <label for="compra">Compra</label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="right-column col-md-6">
+                    <fieldset>
+                        <legend>Datos Personales:</legend>
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" placeholder="Escribe tu nombre">
+
+                        <label>Sexo:</label>
+                        <div class="radio-group">
+                            <input type="radio" name="Sexo" value="Hombre" id="hombre">
+                            <label for="hombre">Hombre</label><br>
+
+                            <input type="radio" name="Sexo" value="Mujer" id="mujer">
+                            <label for="mujer">Mujer</label><br>
+
+                            <input type="radio" name="Sexo" value="Otros" id="otros">
+                            <label for="otros">Otros</label>
+                        </div>
+
+                        <label for="nacionalidad">País de Procedencia:</label>
+                        <select name="nacionalidad" id="nacionalidad">
+                            <option value="España">España</option>
+                            <option value="Inglaterra">Inglaterra</option>
+                            <option value="Italia">Italia</option>
+                            <option value="Malta">Malta</option>
+                            <option value="China">China</option>
+                            <option value="Mongolia">Mongolia</option>
+                        </select>
+
+                        <label for="input-email">E-mail:</label>
+                        <input type="email" id="input-email" name="email" placeholder="maria.luisa@gmail.com">
+
+                        <label for="comentarios">Información adicional:</label>
+                        <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe tus comentarios"></textarea>
+                    </fieldset>
+                </div>
+            </div>
+
+            <div class="form-actions d-flex justify-content-center gap-3">
+                <input type="submit" value="Enviar" id="Enviar" class="btn btn-warning boton">
+                <input type="reset" value="Borrar" id="Borrar" class="btn btn-warning boton">
+                <a href="Home.html" class="btn btn-warning boton">Página Principal</a>
+            </div>
+            <div id="errorMessage" class="text-danger text-center mt-3"></div>
+        </form>
+    </div>
+</body>
+
+</html>

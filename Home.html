@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concesionario de Coches</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Home.css">
+    <script defer src="Home.js"></script>
+    <script defer src="BTN.js"></script>
+</head>
+
+<body>
+    <header class="bg text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark container">
+            <a class="navbar-brand mx-auto d-flex align-items-center">
+                <img src="img/logoH.png" alt="Logo del Concesionario" class="d-inline-block align-text-top" width="50">
+                <span class="ms-2">Concesionario</span>
+            </a>
+            <button class="navbar-toggler" type="button" id="navbarToggler" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Deportivos.html">Coches</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contactanos.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Favorito.html">Favoritos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <section id="home" class="sec text-white text-center py-5">
+        <div class="container">
+            <h1>Bienvenido a Nuestro Concesionario</h1>
+            <p>Encuentra el coche de tus sueños en nuestra exclusiva colección de vehículos.</p>
+            <a href="Deportivos.html" class="btn btn-light">Explorar Coches</a>
+        </div>
+    </section>
+
+    <section id="coches" class="py-5">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2>Coches Destacados</h2>
+                <p>Los vehículos más deseados y de alta gama. Descubre nuestras ofertas.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/r8.jpg" class="card-img-top" alt="Coche Deportivo">
+                        <div class="card-body">
+                            <h5 class="card-title">Coche Deportivo</h5>
+                            <p class="card-text">Precio: 236,000€</p>
+                            <a href="https://www.audi.es/es/web/es/modelos/r8.html" class="btn btn-primary">Ver
+                                Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/x6.jpg" class="card-img-top" alt="SUV Familiar">
+                        <div class="card-body">
+                            <h5 class="card-title">SUV Familiar</h5>
+                            <p class="card-text">Precio: 96,800€</p>
+                            <a href="https://www.bmw.es/es/coches-bmw/x/X6/2023/caracteristicas.html"
+                                class="btn btn-primary">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/patrol.jpg" class="card-img-top" alt="Coche Hibrido">
+                        <div class="card-body">
+                            <h5 class="card-title">Coche Hibrido</h5>
+                            <p class="card-text">Precio: 90,000€</p>
+                            <a href="https://www.nissan.pe/vehiculos/nuevos/nissan-patrol.html"
+                                class="btn btn-primary">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2>Contáctanos</h2>
+                <p>Si tienes alguna pregunta o quieres agendar una prueba de manejo, ¡estamos para ayudarte!</p>
+            </div>
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Nombre:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Tu nombre" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Correo Electrónico:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico" required>
+                </div>
+                <div class="col-12">
+                    <label for="message" class="form-label">Mensaje:</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Escribe tu mensaje"></textarea>
+                </div>
+                <div class="col-12 text-center">
+                    <button id="send" type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg text-white text-center py-3">
+        <p>&copy; 2024 Concesionario de Coches | Todos los derechos reservados | By Javier Marzo</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

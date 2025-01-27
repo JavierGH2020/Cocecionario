@@ -1,0 +1,29 @@
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg {
+    background-color: #343a40;
+}
+
+.card img {
+    border-radius: 0.5rem;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+button img {
+    transition: transform 0.2s ease;
+}
+
+button:hover img {
+    transform: scale(1.2);
+}
+
+footer img:hover {
+    transform: scale(1.3);
+}
